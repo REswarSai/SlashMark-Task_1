@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption&DecryptionTool</title>
+
+    <link rel="stylesheet" type="text/css" href="/Task-1/Encryption.css">
+
+    <!--google fonts link--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <h1>Encryption Decrytion Tool</h1>
+
+    <!--container-->
+    <div class="text-container">
+
+        <!--input-->
+        <div class="input-section">
+            <h2>Original Message</h2>
+            <textarea id="input-text" placeholder="Enter your input text..."></textarea>
+        </div>
+        <!--input-->
+        
+        <!--output-->
+        <div class="output-section">
+            <h2>Output Message</h2>
+            <textarea id="output-text" placeholder="Encrypted and Decrypted text will appear here..." readonly></textarea>
+        </div>
+        <!--output-->
+
+    </div>
+    <!--container-->
+
+    <!--button-->
+    <div>
+        <label for="key">Encryption Key</label>
+        <input type="number" id="key" min="1" max="25" value="3">
+    </div>
+    <button onclick="encrypt()">Encrypt</button>
+    <button onclick="decrypt()">Decrypt</button>
+    <!--button-->
+
+    <script src="/Task-1/Encryption.js"></script>
+    
+</body>
+</html>
